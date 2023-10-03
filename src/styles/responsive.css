@@ -1,0 +1,30 @@
+.posts {
+    display: grid;
+    gap: 16px;
+}
+
+@media screen and (min-width: 768px){
+    .posts {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 10px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .headline{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    .posts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main{
+        max-width: 1200px;
+    }
+}
